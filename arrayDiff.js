@@ -6,5 +6,10 @@ function arrayDiff(a, b) {
 // else if its unique
 // then add it to new array
 
-  return a.filter(r=> !b.includes(r))
+// better solution with quadratic complexity
+  let newSet = new Set(b)
+  return a.filter(n => !newSet.has(n))
+  
+// old solution that was linear complexity
+//   return a.filter(r=> !b.includes(r))
 }

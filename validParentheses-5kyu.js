@@ -1,4 +1,5 @@
 // Valid Parentheses
+// https://www.codewars.com/kata/52774a314c2333f0a7000688
 
 // Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.
 
@@ -20,31 +21,6 @@ function validParentheses(parens){
   }
   
   return n == 0;
-}
-
-// --- Long solution with arrays by Rohan Paul ---
-function validParentheses(parens){
-    let stack = [];
-
-    let open = {
-        '(': ')'
-    };
-
-    let closed = {
-        ')': true
-    }
-
-    for (let i = 0; i < parens.length; i++) {
-        let char = parens[i]
-        
-        if (open[char]) {
-            stack.push(char)
-        } else if (closed[char]) {
-            if (open[stack.pop()] !== char) return false
-        }
-        console.log(stack)
-    }
-    return stack.length === 0;
 }
 
 // parameters: parens +

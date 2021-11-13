@@ -1,5 +1,6 @@
-// ### You're a square!
+// You're a square!
 // Sept 14 2021
+// https://www.codewars.com/kata/54c27a33fb7da0db0100040e/javascript
 
 // Task: Given an integral number, determine if it's a square number.
 // Examples:

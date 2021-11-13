@@ -1,5 +1,6 @@
 // Valid number to 2 decimal places
-// Description:
+// https://www.codewars.com/kata/55f9064161541a9e01000001
+
 // Check that a number is a valid number that has been given to 2 decimal places. The number passed to the function will be given as a string.
 // If the number satisfies the criteria below, the function should return true, else it should return false.
 
